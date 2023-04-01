@@ -1,0 +1,57 @@
+.videoCard {
+    width: 22.3rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1rem;
+    transition: border-radius .3s;
+    cursor: pointer;
+    max-width: 95vw;
+}
+
+.videoCard>img {
+    object-fit: contain;
+}
+
+.videoCard__thumbnail {
+    height: 12.5rem;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.videoCard:hover {
+    border-radius: 0;
+}
+
+.videoCard__info {
+    display: flex;
+    padding-right: 2rem;
+    margin-top: .5rem;
+}
+
+.videoCard__text {
+    margin-left: .8rem;
+}
+
+.videoCard__text>h4 {
+    font-size: .925rem;
+    font-weight: 500;
+    padding-bottom: .4rem;
+    color: whitesmoke;
+}
+
+.videoCard__text>p {
+    font-size: .88rem;
+    font-weight: 400;
+    color: gray;
+}
+
+#channelName {
+    margin-bottom: .1rem;
+}
+
+.videoCard__channelVerified {
+    font-size: small !important;
+    position: absolute;
+    margin-top: .1rem;
+    margin-left: .25rem;
+    color: #AAAAAA;
+}

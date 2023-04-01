@@ -1,0 +1,23 @@
+.sidebarRow {
+    display: flex;
+    align-items: center;
+    gap: 2vmin;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 1vmin 1rem;
+    border-radius: .9rem;
+}
+
+.sidebarRow__title {
+    flex: 1;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.sidebarRow:hover {
+    background-color: #272727;
+}
+
+.sidebarRow.selected {
+    background-color: hsl(0, 0%, 25%);
+}

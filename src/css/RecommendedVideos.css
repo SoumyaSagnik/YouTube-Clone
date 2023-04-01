@@ -1,0 +1,17 @@
+.recommendedVideos {
+    flex: 0.88;
+    padding: 2.5rem 2rem;
+    padding-bottom: 0;
+}
+
+.recommendedVideos__videos {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .9rem;
+}
+
+@media (max-width:800px) {
+    .recommendedVideos__videos {
+        justify-content: center;
+    }
+}
