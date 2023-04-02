@@ -115,6 +115,12 @@
 
 @media (max-width: 800px) {
     .header__center {
+        margin: 0 3vmin;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__center {
         margin: 0 1vmin;
     }
 }

@@ -1,6 +1,7 @@
 .recommendedVideos {
     flex: 0.88;
     padding: 2.5rem 2rem;
+    padding-right: .25rem;
     padding-bottom: 0;
 }
 
@@ -10,7 +11,7 @@
     column-gap: .9rem;
 }
 
-@media (max-width:800px) {
+@media (max-width:950px) {
     .recommendedVideos__videos {
         justify-content: center;
     }
