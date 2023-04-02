@@ -7,9 +7,15 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import { Avatar } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [inputSearch, setInputSearch] = useState("");
+  const navigate = useNavigate();
+  function handleSearchInput(e) {
+    if (inputSearch.trim().length > 0 && e.key === "Enter")
+      navigate(`/search/${inputSearch}`);
+  }
 
   return (
     <div className="header">
@@ -27,6 +33,7 @@ const Header = () => {
           spellCheck={false}
           value={inputSearch}
           onChange={(e) => setInputSearch(e.target.value)}
+          onKeyDown={handleSearchInput}
         />
         <Link
           to={inputSearch.trim() !== "" && `/search/${inputSearch}`}
